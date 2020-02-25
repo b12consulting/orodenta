@@ -3,12 +3,13 @@
 <head>
     <title>Orodenta</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 </head>
 <body>
 
 <header class="header">
     <a href="#" class="logo">
-        <img src="assets/images/logo-orodenta-3.svg" width="100px"/>
+        <img src="assets/images/header-logo.svg" width="75"/>
     </a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -33,7 +34,8 @@
         </li>
     </ul>
 </header>
-<div class="rere">
+
+<div class="motion-slider">
     <div class="slideshows">
         <div class="slideshow slideshow--hero">
             <div class="slides">
@@ -62,8 +64,8 @@
 </div>
 
 <!-- HOME SECTION -->
-<div class="home-view">
-    <img src="assets/images/logo-orodenta-3.svg" width="450px;" />
+<div class="home-view orodenta-logo">
+    <img src="assets/images/logo-orodenta-3.svg" width="200px;" />
 </div>
 <div class="id-section" id="home"></div>
 <div class="wrapper home-container">
@@ -71,7 +73,13 @@
         <div class="row">
             <div class="center-block">
                 <h1>Bienvenue</h1>
-                <p>Le dentiste Van Wijnsberghe Thomas et son équipe sont heureux
+                <div class="line">
+                    <div class="underline"></div>
+                    <div class="underline-dotted"></div>
+                </div>
+                <p>Le dentiste
+                    <span class="c-green bold">Van Wijnsberghe Thomas</span>
+                    et son équipe sont heureux
                     de vous accueillir dans leurs nouveaux locaux situés rue
                     du centre, n°4 à Lesve.</p>
             </div>
@@ -89,6 +97,51 @@
 </div>
 <div class="wrapper bg-green">
     <div class="container">
+        <div class="team">
+            <div class="des-mela">
+                <div class="content-julie">
+                    <p>
+                        La lutte contre le tabac constitue un vrai parcours du combattant.
+                        De nombreuses personnes désirent arrêter de fumer mais n'y arrivent
+                        pas à cause de leur dépendance à la nicotine, et beaucoup
+                        s'accrochent avec plaisir à la cigarette pensant qu'elle apaise
+                        le stress et atténue les problèmes.
+                    </p>
+                    <p>
+                        Cependant, on sait tous les dangers que génère le tabagisme ainsi
+                        que les conséquences nocives qu'il entraîne. Voilà pourquoi, quand
+                        une personne décide d'arrêter, il convient de la soutenir au
+                        maximum pour qu'elle arrive au bout de sa lutte.
+                    </p>
+                    <p>
+                        En tant que tabacologue, mon rôle est de vous accompagner
+                        tout au long de votre démarche d’arrêt du tabac.
+                    </p>
+                    <p>
+                        Le premier entretien permet d’évaluer votre dépendance aux niveaux
+                        physique, psychologique et comportemental et d’établir une stratégie
+                        de sevrage personnalisée.
+                    </p>
+                    <p>
+                        Au cours des entretiens suivants, je vous apporte écoute et soutien
+                        et je travaille avec vous sur vos motivations en essayant de les
+                        renforcer, tout en suivant votre rythme.
+                    </p>
+                    <p>
+                        Etant formée à l’hypnose, je peux également vous proposer un sevrage
+                        tabagique en 5 séances. Les séances d’hypnose vous aideront à pousser
+                        votre motivation au maximum, elles sont couplées à des techniques
+                        comportementales dont le but est d’éradiquer vos habitudes tabagiques.
+                    </p>
+                    <p>
+                        Je vous reçois à l’espace Oro Denta tous les lundis et vendredis
+                        après-midi dès 13h30. Bon à savoir : la mutuelle prévoit un
+                        remboursement pour 8 consultations sur une période de 2 ans.
+                    </p>
+                </div>
+            </div>
+            <img class="pic-julie" src="assets/images/pic-melanie.jpg" />
+        </div>
         <div class="team">
             <img class="pic-julie" src="assets/images/pic-julie.png" />
             <div class="des-julie">
@@ -122,8 +175,8 @@
     </div>
 </div>
 <!-- END -->
-
-<div class="id-section" id="services"></div>
+<!-- CONTACT -->
+<div class="id-section" id="contact"></div>
 <div class="wrapper bg-green">
     <div class="container">
         <h2 class="section-title">services</h2>
@@ -149,186 +202,186 @@
     </div>
 </div>
 
-<div class="wrapper number-wrapper">
-    <div class="container">
-        <div class="number">
-            <div class="number-box">
-                <img class="ic" src="assets/images/ic-number-1.svg" />
-                <p>de l'ensemble des journées de travail sont perdues pour cause de stress.<sup>1</sup></p>
-            </div>
-            <div class="number-box padding">
-                <img class="ic" src="assets/images/ic-number-2.svg" />
-                <p>des salariés disent souffrir de stress élevé.<sup>2</sup></p>
-            </div>
-            <div class="number-box">
-                <img class="ic" src="assets/images/ic-number-3.svg" />
-                <p>de massage assis régulier, permettent de calculer plus vite en faisant moins d’erreurs.<sup>3</sup></p>
-            </div>
-        </div>
-        <div class="legend">
-            <i>
-                <div><sup>1</sup> Selon l’agence européenne pour la sécurité et la santé.</div>
-                <div><sup>2</sup> Selon une enquête menée en Belgique. </div>
-                <div><sup>3</sup> Selon des études menée au TRI de Miami. </div>
-            </i>
-        </div>
-    </div>
-</div>
+<!--<div class="wrapper number-wrapper">-->
+    <!--<div class="container">-->
+        <!--<div class="number">-->
+            <!--<div class="number-box">-->
+                <!--<img class="ic" src="assets/images/ic-number-1.svg" />-->
+                <!--<p>de l'ensemble des journées de travail sont perdues pour cause de stress.<sup>1</sup></p>-->
+            <!--</div>-->
+            <!--<div class="number-box padding">-->
+                <!--<img class="ic" src="assets/images/ic-number-2.svg" />-->
+                <!--<p>des salariés disent souffrir de stress élevé.<sup>2</sup></p>-->
+            <!--</div>-->
+            <!--<div class="number-box">-->
+                <!--<img class="ic" src="assets/images/ic-number-3.svg" />-->
+                <!--<p>de massage assis régulier, permettent de calculer plus vite en faisant moins d’erreurs.<sup>3</sup></p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="legend">-->
+            <!--<i>-->
+                <!--<div><sup>1</sup> Selon l’agence européenne pour la sécurité et la santé.</div>-->
+                <!--<div><sup>2</sup> Selon une enquête menée en Belgique. </div>-->
+                <!--<div><sup>3</sup> Selon des études menée au TRI de Miami. </div>-->
+            <!--</i>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
-<div class="wrapper services bg-green">
-    <div class="container">
-        <div class="sub-box-title">
-            <h2 class="sub-title">Massage assis</h2>
-        </div>
-        <div class="massage-assis">
-            <div class="massage-box">
-                <div class="massage-content">
-                    <div class="txt">
-                        <div class="content-title">
-                            Bienfaits :
-                        </div>
-                        <div class="txt-box">
-                            <p>Meilleure gestion du stress et de la fatigue.</p>
+<!--<div class="wrapper services bg-green">-->
+    <!--<div class="container">-->
+        <!--<div class="sub-box-title">-->
+            <!--<h2 class="sub-title">Massage assis</h2>-->
+        <!--</div>-->
+        <!--<div class="massage-assis">-->
+            <!--<div class="massage-box">-->
+                <!--<div class="massage-content">-->
+                    <!--<div class="txt">-->
+                        <!--<div class="content-title">-->
+                            <!--Bienfaits :-->
+                        <!--</div>-->
+                        <!--<div class="txt-box">-->
+                            <!--<p>Meilleure gestion du stress et de la fatigue.</p>-->
 
-                            <p>Gain de performance : augmentation de la productivité et accroissement de la concentration.</p>
+                            <!--<p>Gain de performance : augmentation de la productivité et accroissement de la concentration.</p>-->
 
-                            <p>Bien-être général : soulagement des douleurs dorsales et apaisement des maux de têtes.</p>
-                        </div>
-                        <div class="content-title">
-                            Fréquences :
-                        </div>
-                        <div class="txt-box">
-                            <p>De manière ponctuelle, le massage Assis permet une relaxation profonde, sur le moment.</p>
+                            <!--<p>Bien-être général : soulagement des douleurs dorsales et apaisement des maux de têtes.</p>-->
+                        <!--</div>-->
+                        <!--<div class="content-title">-->
+                            <!--Fréquences :-->
+                        <!--</div>-->
+                        <!--<div class="txt-box">-->
+                            <!--<p>De manière ponctuelle, le massage Assis permet une relaxation profonde, sur le moment.</p>-->
 
-                            <p>De manière régulière, il permet une régulation du taux de cortisol, hormone du « stress ».</p>
+                            <!--<p>De manière régulière, il permet une régulation du taux de cortisol, hormone du « stress ».</p>-->
 
-                            <p>Fréquent, il conduit à une plus grande résistance au stress et un renforcement des défenses immunitaires.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ic-massage">
-                    <img src="assets/images/ic-massage-assis.svg" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="wrapper services">
-    <div class="container">
-        <div class="sub-box-title">
-            <h2 class="sub-title">Stretching</h2>
-        </div>
-        <div class="strech-box">
-            <div class="strech-content">
-                <p>
-                    Le stretching est une discipline douce, qui se pratique dans l’écoute de soi-même
-                    au rythme de votre respiration lente et profonde.
-                </p>
-                <p>
-                    Le stretching renferme de nombreux bienfaits, il permet d’assouplir les muscles,
-                    d’améliorer sa posture et d’évacuer le stress.
-                </p>
-                <p>
-                    Apprenons ensemble à corriger votre posture tout en douceur pour vous
-                    libérer de vos tensions du quotidien.
-                </p>
-            </div>
-            <div class="ic-content">
-                <img src="assets/images/ic-streching.jpg" />
-            </div>
-        </div>
-    </div>
-</div>
-<div class="id-section" id="quote"></div>
-<div class="wrapper bg-green">
-    <div class="container">
-        <h2 class="section-title">témoignages</h2>
-    </div>
-</div>
-<div class="wrapper quote">
-    <div class="container">
+                            <!--<p>Fréquent, il conduit à une plus grande résistance au stress et un renforcement des défenses immunitaires.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="ic-massage">-->
+                    <!--<img src="assets/images/ic-massage-assis.svg" />-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="wrapper services">-->
+    <!--<div class="container">-->
+        <!--<div class="sub-box-title">-->
+            <!--<h2 class="sub-title">Stretching</h2>-->
+        <!--</div>-->
+        <!--<div class="strech-box">-->
+            <!--<div class="strech-content">-->
+                <!--<p>-->
+                    <!--Le stretching est une discipline douce, qui se pratique dans l’écoute de soi-même-->
+                    <!--au rythme de votre respiration lente et profonde.-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--Le stretching renferme de nombreux bienfaits, il permet d’assouplir les muscles,-->
+                    <!--d’améliorer sa posture et d’évacuer le stress.-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--Apprenons ensemble à corriger votre posture tout en douceur pour vous-->
+                    <!--libérer de vos tensions du quotidien.-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="ic-content">-->
+                <!--<img src="assets/images/ic-streching.jpg" />-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="id-section" id="quote"></div>-->
+<!--<div class="wrapper bg-green">-->
+    <!--<div class="container">-->
+        <!--<h2 class="section-title">témoignages</h2>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="wrapper quote">-->
+    <!--<div class="container">-->
 
-        <div class="row">
-            <div class="center-block">
-                <div class="ic-quote">
-                    <img src="assets/images/ic-quote.svg" width="60px"/>
-                </div>
-                <p class="box michel">
-                    Julie est très professionnelle et parvient à mettre tout le monde à l’aise
-                    dès la première séance. Un vrai plus pour le bien-être au travail !
-                </p>
-                <img class="ic-michel" src="assets/images/quote-michel.jpg" />
-            </div>
-            <div class="center-block">
-                <div class="ic-quote">
-                    <img src="assets/images/ic-quote.svg" width="60px"/>
-                </div>
-                <p class="box wendy">
-                    J’ai apprécié non seulement les conseils en ergonomie, mais aussi les
-                    massages assis ! C’est un vrai moment de détente, qui m’a reboostée.
-                </p>
-                <img class="ic-wendy" src="assets/images/quote-wendy.jpg" />
-            </div>
-        </div>
-        <div class="mid-center-box">
-            <div class="center-block">
-                <div class="ic-quote">
-                    <img src="assets/images/ic-quote.svg" width="60px"/>
-                </div>
-                <p class="box bertrand">
-                    Au travail, je reste de longues heures assis devant mon ordinateur. Julie m’a
-                    donné d’excellents conseils pour soulager mes tensions.
-                </p>
-                <img class="ic-bertrand" src="assets/images/quote-bertrand.jpg" />
-            </div>
-        </div>
-    </div>
-</div>
-<div class="id-section" id="tarif"></div>
-<div class="wrapper bg-purple">
-    <div class="container">
-        <h2 class="section-title bg-purple">Tarifs</h2>
-    </div>
-</div>
-<div class="wrapper tarif">
-    <div class="container">
-        <div class="row">
-            <div class="center-block">
-                <img src="assets/images/ic-horaire.svg" width="150px">
-                <p class="c-green">Á l'heure</p>
-            </div>
-            <div class="center-block">
-                <img src="assets/images/ic-abo.svg" width="150px">
-                <p class="c-purple">Abonnement annuel</p>
-            </div>
-            <div class="center-block">
-                <img src="assets/images/ic-package.svg" width="150px">
-                <p class="c-green">Package sur mesure</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="id-section" id="rdv"></div>
-<div class="wrapper bg-green">
-    <div class="container">
-        <h2 class="section-title bg-green">Rendez-vous</h2>
-    </div>
-</div>
-<div class="wrapper rdv">
-    <div class="container">
-        <div class="row">
-            <a class="rdv-button" href="https://embedded.progenda.be/embedded/pages/suggester?calendar=dendal-julie-lesves" target="_blank">
-                Centre Oro Denta - Lesve
-            </a>
-        </div>
-    </div>
-</div>
-<div class="id-section" id="contact"></div>
-<div class="wrapper bg-purple">
-    <div class="container">
-        <h2 class="section-title bg-purple">contact</h2>
-    </div>
-</div>
+        <!--<div class="row">-->
+            <!--<div class="center-block">-->
+                <!--<div class="ic-quote">-->
+                    <!--<img src="assets/images/ic-quote.svg" width="60px"/>-->
+                <!--</div>-->
+                <!--<p class="box michel">-->
+                    <!--Julie est très professionnelle et parvient à mettre tout le monde à l’aise-->
+                    <!--dès la première séance. Un vrai plus pour le bien-être au travail !-->
+                <!--</p>-->
+                <!--<img class="ic-michel" src="assets/images/quote-michel.jpg" />-->
+            <!--</div>-->
+            <!--<div class="center-block">-->
+                <!--<div class="ic-quote">-->
+                    <!--<img src="assets/images/ic-quote.svg" width="60px"/>-->
+                <!--</div>-->
+                <!--<p class="box wendy">-->
+                    <!--J’ai apprécié non seulement les conseils en ergonomie, mais aussi les-->
+                    <!--massages assis ! C’est un vrai moment de détente, qui m’a reboostée.-->
+                <!--</p>-->
+                <!--<img class="ic-wendy" src="assets/images/quote-wendy.jpg" />-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="mid-center-box">-->
+            <!--<div class="center-block">-->
+                <!--<div class="ic-quote">-->
+                    <!--<img src="assets/images/ic-quote.svg" width="60px"/>-->
+                <!--</div>-->
+                <!--<p class="box bertrand">-->
+                    <!--Au travail, je reste de longues heures assis devant mon ordinateur. Julie m’a-->
+                    <!--donné d’excellents conseils pour soulager mes tensions.-->
+                <!--</p>-->
+                <!--<img class="ic-bertrand" src="assets/images/quote-bertrand.jpg" />-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="id-section" id="tarif"></div>-->
+<!--<div class="wrapper bg-purple">-->
+    <!--<div class="container">-->
+        <!--<h2 class="section-title bg-purple">Tarifs</h2>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="wrapper tarif">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="center-block">-->
+                <!--<img src="assets/images/ic-horaire.svg" width="150px">-->
+                <!--<p class="c-green">Á l'heure</p>-->
+            <!--</div>-->
+            <!--<div class="center-block">-->
+                <!--<img src="assets/images/ic-abo.svg" width="150px">-->
+                <!--<p class="c-purple">Abonnement annuel</p>-->
+            <!--</div>-->
+            <!--<div class="center-block">-->
+                <!--<img src="assets/images/ic-package.svg" width="150px">-->
+                <!--<p class="c-green">Package sur mesure</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="id-section" id="rdv"></div>-->
+<!--<div class="wrapper bg-green">-->
+    <!--<div class="container">-->
+        <!--<h2 class="section-title bg-green">Rendez-vous</h2>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="wrapper rdv">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<a class="rdv-button" href="https://embedded.progenda.be/embedded/pages/suggester?calendar=dendal-julie-lesves" target="_blank">-->
+                <!--Centre Oro Denta - Lesve-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="id-section" id="contact"></div>-->
+<!--<div class="wrapper bg-purple">-->
+    <!--<div class="container">-->
+        <!--<h2 class="section-title bg-purple">contact</h2>-->
+    <!--</div>-->
+<!--</div>-->
 <div class="wrapper bg-purple footer">
     <div class="container">
         <div class="content">

@@ -158,6 +158,10 @@ html, body {
   text-align: center;
 }
 
+.bold {
+  font-family: "omnesmedium";
+}
+
 .center-block {
   width: 100%;
   display: flex;
@@ -260,6 +264,66 @@ input {
     margin-top: -270px;
   }
 }
+.orodenta-logo a {
+  padding: 60px;
+}
+
+.orodenta-logo img:hover,
+.orodenta-logo img:focus,
+.orodenta-logo img:active {
+  -webkit-animation-name: buzz;
+  animation-name: buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes buzz {
+  50% {
+    -ms-transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -ms-transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes buzz {
+  50% {
+    -ms-transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -ms-transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+/* COMMON */
+.underline {
+  height: 3px;
+  background-color: #a9d36d;
+  width: 70px;
+}
+
+.underline-dotted {
+  background-color: transparent;
+  height: 1px;
+  border-top: dotted 3px #a9d36d;
+  width: 70px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+}
+
 /* GENERAL STYLE */
 .home-view {
   display: flex;
@@ -269,7 +333,7 @@ input {
   width: 100%;
   z-index: 4;
   position: absolute;
-  margin-top: -250px;
+  margin-top: -324px;
 }
 
 .home-container {
@@ -297,27 +361,27 @@ input {
 .team .pic-julie {
   width: 250px;
 }
-.team .des-julie {
+.team .des-julie, .team .des-mela {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 55%;
   padding: 16px;
 }
-.team .des-julie .ic-title {
+.team .des-julie .ic-title, .team .des-mela .ic-title {
   display: flex;
   justify-content: space-between;
 }
-.team .des-julie .ic-title .ic {
+.team .des-julie .ic-title .ic, .team .des-mela .ic-title .ic {
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.team .des-julie .ic-title .ic img {
+.team .des-julie .ic-title .ic img, .team .des-mela .ic-title .ic img {
   width: 150px;
 }
-.team .des-julie .content-julie {
+.team .des-julie .content-julie, .team .des-mela .content-julie {
   width: 100%;
 }
 
@@ -586,7 +650,8 @@ input {
   border: solid 1px #a9d36d;
 }
 
-.rere {
+/* INSPIRED BY https://codepen.io/lgrqvst/pen/YdVLrE */
+.motion-slider {
   position: relative;
   height: 500px;
   width: 100vw;
@@ -596,6 +661,7 @@ input {
 .slideshow {
   position: absolute;
   top: 0;
+  margin-top: 60px;
   left: 50%;
   width: 100%;
   height: 100%;
@@ -616,7 +682,7 @@ input {
   left: 0;
   top: -10%;
   width: 100vw;
-  height: 500px;
+  height: 300px;
   animation: 11s slideshow-hero-mobile -3s infinite;
 }
 .slideshow--hero .slide1 {
@@ -831,6 +897,7 @@ input {
     transform: scale(1.05);
   }
 }
+/* MEDIA */
 /* MENU BURGER */
 @media (min-width: 1087px) {
   .header li {
