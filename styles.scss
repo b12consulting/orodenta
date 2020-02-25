@@ -11,6 +11,7 @@ html,body {
     margin: 0;
     font-family: 'omnesregular';
     line-height: 1.3em;
+    color: $secondary;
 }
 
 @font-face {
@@ -223,11 +224,18 @@ html,body {
     .container {
         width: 60%;
 
+        .section-title-green {
+            color: $primary-green;
+            font-size: 25px;
+            font-family:'omnesmedium';
+        }
+
         .section-title {
             color: white;
             font-size: 25px;
             font-family:'omnesmedium';
         }
+
 
     }
 }
@@ -252,95 +260,6 @@ input {
     &:hover {
         background-color: $secondary;
         color: white;
-    }
-}
-
-/* ANIMATION SWITCH */
-
-#switch-txt {
-    text-transform: uppercase;
-    font-size:36px;
-    font-weight:bold;
-    width:100%;
-    bottom:45%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    #flip {
-        height:50px;
-        overflow:hidden;
-        line-height: 1em;
-        font-family: 'omnesbold';
-
-        .green {
-            color: $primary-green;
-        }
-    }
-}
-
-#flip > div > div {
-    color:$secondary;
-    padding:4px 12px;
-    height:45px;
-    margin-bottom:45px;
-    display:inline-block;
-}
-
-#flip div:first-child {
-    animation: show 9s linear infinite;
-}
-
-@keyframes show {
-    0% {margin-top:-270px;}
-    5% {margin-top:-180px;}
-    33% {margin-top:-180px;}
-    38% {margin-top:-90px;}
-    66% {margin-top:-90px;}
-    71% {margin-top:0px;}
-    99.99% {margin-top:0px;}
-    100% {margin-top:-270px;}
-}
-
-.orodenta-logo a {
-    padding: 60px;
-}
-
-.orodenta-logo img:hover,
-.orodenta-logo img:focus,
-.orodenta-logo img:active {
-    -webkit-animation-name: buzz;
-    animation-name: buzz;
-    -webkit-animation-duration: 0.15s;
-    animation-duration: 0.15s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes buzz {
-    50% {
-        -ms-transform: translateX(3px) rotate(2deg);
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
-    }
-    100% {
-        -ms-transform: translateX(-3px) rotate(-2deg);
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
-    }
-}
-@keyframes buzz {
-    50% {
-        -ms-transform: translateX(3px) rotate(2deg);
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
-    }
-    100% {
-        -ms-transform: translateX(-3px) rotate(-2deg);
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
     }
 }
 
@@ -404,6 +323,8 @@ input {
 
     .pic-julie {
         width: 250px;
+        border-radius: 50%;
+        border: solid 2px white;
     }
 
     .des-julie, .des-mela {
@@ -684,7 +605,6 @@ input {
 }
 
 .footer {
-    color: white;
     padding-bottom: 16px;
 
     .content {
@@ -764,7 +684,7 @@ input {
     }
 }
 
-/* INSPIRED BY https://codepen.io/lgrqvst/pen/YdVLrE */
+/* SLIDER MOTION INSPIRED BY https://codepen.io/lgrqvst/pen/YdVLrE */
 .motion-slider {
     position: relative;
     height: 500px;
@@ -1052,6 +972,60 @@ input {
     }
 }
 
+/* LOGO ANIMATION INSPIRED BY https://bit.ly/2Ti6gVB */
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+}
+
+.orodenta-logo a {
+    padding: 60px;
+}
+
+.orodenta-logo img:hover,
+.orodenta-logo img:focus,
+.orodenta-logo img:active {
+    -webkit-animation-name: buzz;
+    animation-name: buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes buzz {
+    50% {
+        -ms-transform: translateX(3px) rotate(2deg);
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -ms-transform: translateX(-3px) rotate(-2deg);
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+@keyframes buzz {
+    50% {
+        -ms-transform: translateX(3px) rotate(2deg);
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -ms-transform: translateX(-3px) rotate(-2deg);
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+/* END ANIMATE LOGO */
 
 /* MEDIA */
 /* MENU BURGER */
