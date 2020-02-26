@@ -218,11 +218,24 @@ input {
   width: 70px;
 }
 
+.underline-w {
+  height: 3px;
+  background-color: white;
+  width: 50%;
+}
+
 .underline-dotted {
   background-color: transparent;
   height: 1px;
   border-top: dotted 3px #a9d36d;
   width: 70px;
+}
+
+.underline-dotted-w {
+  background-color: transparent;
+  height: 1px;
+  border-top: dotted 3px white;
+  width: 50%;
 }
 
 .line {
@@ -273,7 +286,7 @@ input {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 55%;
+  width: 100%;
   padding: 16px;
 }
 .team .des-julie .ic-title, .team .des-mela .ic-title {
@@ -290,9 +303,13 @@ input {
   width: 150px;
 }
 .team .des-julie .content-julie, .team .des-mela .content-julie {
-  width: 100%;
+  width: 50%;
 }
-
+.team .align-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .number-wrapper {
   border-top: solid 1px #a9d36d;
   padding-top: 16px;
@@ -499,7 +516,7 @@ input {
   justify-content: space-between;
 }
 .footer .content .left-box {
-  width: 50%;
+  width: 30%;
 }
 .footer .content .left-box .address-box {
   display: flex;
@@ -518,8 +535,7 @@ input {
   color: #a9d36d;
 }
 .footer .content .right-box {
-  margin-top: 16px;
-  width: 50%;
+  width: 70%;
   padding: 0 16px;
 }
 .footer .content .right-box .input-line {

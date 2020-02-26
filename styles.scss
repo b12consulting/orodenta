@@ -270,11 +270,24 @@ input {
     width: 70px;
 }
 
+.underline-w {
+    height: 3px;
+    background-color: white;
+    width: 50%;
+}
+
 .underline-dotted {
     background-color: transparent;
     height: 1px;
     border-top: dotted 3px $primary-green;
     width: 70px;
+}
+
+.underline-dotted-w {
+    background-color: transparent;
+    height: 1px;
+    border-top: dotted 3px white;
+    width: 50%;
 }
 
 .line {
@@ -331,7 +344,7 @@ input {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 55%;
+        width: 100%;
         padding: 16px;
 
         .ic-title {
@@ -351,7 +364,18 @@ input {
         }
 
         .content-julie {
-            width: 100%;
+            width: 50%;
+        }
+
+    }
+
+    .align-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .name {
+
         }
     }
 }
@@ -613,7 +637,7 @@ input {
         justify-content: space-between;
 
         .left-box {
-            width: 50%;
+            width: 30%;
 
             .address-box {
                 display: flex;
@@ -638,8 +662,7 @@ input {
         }
 
         .right-box {
-            margin-top: 16px;
-            width: 50%;
+            width: 70%;
             padding: 0 16px;
 
             .input-line {
