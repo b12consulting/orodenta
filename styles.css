@@ -155,6 +155,10 @@ html, body {
   color: #666a73;
 }
 
+.c-white {
+  color: white;
+}
+
 .centered-txt {
   text-align: center;
 }
@@ -168,6 +172,11 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.center-block h1 {
+  color: white;
+  font-family: "omnesmedium";
+  font-size: 40px;
 }
 
 .wrapper {
@@ -214,7 +223,7 @@ input {
 /* COMMON */
 .underline {
   height: 3px;
-  background-color: #a9d36d;
+  background-color: white;
   width: 70px;
 }
 
@@ -227,7 +236,7 @@ input {
 .underline-dotted {
   background-color: transparent;
   height: 1px;
-  border-top: dotted 3px #a9d36d;
+  border-top: dotted 3px white;
   width: 70px;
 }
 
@@ -257,6 +266,7 @@ input {
 
 .home-container {
   padding: 30px 0;
+  background-color: #a9d36d;
 }
 .home-container .center-block p {
   max-width: 350px;
@@ -269,7 +279,7 @@ input {
 }
 
 .team {
-  color: white;
+  color: #666a73;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -310,6 +320,17 @@ input {
   flex-direction: column;
   align-items: center;
 }
+.team .align-col .name {
+  font-size: 20px;
+  font-family: "omnesmedium";
+  color: #a9d36d;
+  margin-top: 10px;
+  text-align: center;
+}
+.team .align-col .function {
+  font-size: 15px;
+}
+
 .number-wrapper {
   border-top: solid 1px #a9d36d;
   padding-top: 16px;
@@ -571,6 +592,11 @@ input {
   border-radius: 5px;
   padding: 5px;
   border: solid 1px #a9d36d;
+}
+
+.contact {
+  color: white;
+  padding: 20px 0;
 }
 
 /* SLIDER MOTION INSPIRED BY https://codepen.io/lgrqvst/pen/YdVLrE */
