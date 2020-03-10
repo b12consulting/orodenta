@@ -178,6 +178,10 @@ html, body {
   font-family: "omnesmedium";
   font-size: 40px;
 }
+.center-block .intro-description {
+  font-size: 18px;
+  line-height: 1.4em;
+}
 
 .wrapper {
   width: 100%;
@@ -297,7 +301,6 @@ input {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  padding: 16px;
 }
 .team .des-julie .ic-title, .team .des-mela .ic-title {
   display: flex;
@@ -552,12 +555,19 @@ input {
   flex-direction: column;
   line-height: 1.5em;
 }
+.footer .content .left-box .address-box .content .row {
+  justify-content: flex-start;
+}
+.footer .content .left-box .address-box .content .row img {
+  margin-right: 20px;
+}
 .footer .content .left-box .address-box .content a {
   color: #a9d36d;
 }
 .footer .content .right-box {
   width: 70%;
   padding: 0 16px;
+  margin-top: -40px;
 }
 .footer .content .right-box .input-line {
   width: 101%;

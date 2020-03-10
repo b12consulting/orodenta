@@ -224,6 +224,11 @@ html,body {
         font-family: 'omnesmedium';
         font-size: 40px;
     }
+
+    .intro-description {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
 }
 
 .wrapper {
@@ -356,7 +361,6 @@ input {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        padding: 16px;
 
         .ic-title {
             display: flex;
@@ -672,6 +676,14 @@ input {
                     flex-direction: column;
                     line-height: 1.5em;
 
+                    .row {
+                        justify-content: flex-start;
+
+                        img {
+                            margin-right: 20px;
+                        }
+                    }
+
                     a {
                         color: $primary-green;
                     }
@@ -683,6 +695,7 @@ input {
         .right-box {
             width: 70%;
             padding: 0 16px;
+            margin-top: -40px;
 
             .input-line {
                 width: 101%;
