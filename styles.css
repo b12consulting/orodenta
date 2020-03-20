@@ -296,26 +296,39 @@ input {
   border-radius: 50%;
   border: solid 2px white;
 }
-.team .des-julie, .team .des-mela {
+.team .description {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
 }
-.team .des-julie .ic-title, .team .des-mela .ic-title {
+.team .description .ic-title {
   display: flex;
   justify-content: space-between;
 }
-.team .des-julie .ic-title .ic, .team .des-mela .ic-title .ic {
+.team .description .ic-title .ic {
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.team .des-julie .ic-title .ic img, .team .des-mela .ic-title .ic img {
+.team .description .ic-title .ic img {
   width: 150px;
 }
-.team .des-julie .content-julie, .team .des-mela .content-julie {
+.team .description .content-julie {
+  width: 50%;
+}
+.team .description .content-mela {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.team .description .content-mela .left-col {
+  margin-right: 20px;
+  width: 50%;
+}
+.team .description .content-mela .right-col {
   width: 50%;
 }
 .team .align-col {
