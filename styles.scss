@@ -797,7 +797,6 @@ input {
 .slideshow {
     position: absolute;
     top: 0;
-    margin-top: 60px;
     left: 50%;
     width: 100%;
     height: 100%;
@@ -819,7 +818,7 @@ input {
             left: 0;
             top: -10%;
             width: 100vw;
-            height: 300px;
+            height: 100vh;
             animation: 11s slideshow-hero-mobile -3s infinite;
         }
 
@@ -833,12 +832,8 @@ input {
         }
         .slide3 {
             background-image: url(assets/images/img-03.jpg);
-            animation: 10s slides-set-3 -0.1s infinite;
+            animation: 20s slides-set-3 -0.1s infinite;
         }
-        //.slide4 {
-        //    background-image: url(assets/images/img-04.jpg);
-        //    animation: 20s slides-set-4 -0.1s infinite;
-        //}
 
         @media (min-width: 600px) {
             left: 50%;
@@ -887,29 +882,24 @@ input {
         }
 
         .slides {
-            animation: 20s slideshow-contrast -5s infinite;
+            animation: 14s slideshow-contrast -5s infinite;
         }
 
         .slide1 {
-            background-image: linear-gradient(to bottom, rgba(104,107,116,0.25) 0, rgba(169,205,112,0.5) 100%), url(assets/images/img-01.jpg);
-            // background-image: url(../img/slideshow/hero-1.jpg);
+            background-image: linear-gradient(to bottom, rgba($secondary,0.25) 0, rgba($primary-green,0.7) 100%),
+            url(assets/images/img-01.jpg);
             animation: 20s slides-set-1 -0.2s infinite;
         }
         .slide2 {
-            background-image: linear-gradient(to bottom, rgba(104,107,116,0.25) 0, rgba(169,205,112,0.5) 100%), url(assets/images/img-02.jpg);
-            // background-image: url(../img/slideshow/hero-2.jpg);
+            background-image: linear-gradient(to bottom, rgba($secondary,0.25) 0, rgba($primary-green,0.7) 100%),
+            url(assets/images/img-02.jpg);
             animation: 20s slides-set-2 -0.2s infinite;
         }
         .slide3 {
-            background-image: linear-gradient(to bottom, rgba(104,107,116,0.25) 0, rgba(169,205,112,0.5) 100%), url(assets/images/img-03.jpg);
-            // background-image: url(../img/slideshow/hero-3.jpg);
+            background-image: linear-gradient(to bottom, rgba($secondary,0.25) 0, rgba($primary-green,0.7) 100%),
+            url(assets/images/img-03.jpg);
             animation: 20s slides-set-3 -0.2s infinite;
         }
-        //.slide4 {
-        //    background-image: linear-gradient(to bottom, rgba(104,107,116,0.25) 0, rgba(169,205,112,0.5) 100%), url(assets/images/img-04.jpg);
-        //    // background-image: url(../img/slideshow/hero-3.jpg);
-        //    animation: 20s slides-set-4 -0.2s infinite;
-        //}
 
         &--after {
             top: auto;
@@ -930,9 +920,6 @@ input {
             .slide3 {
                 animation: 20s slides-set-3 infinite;
             }
-            //.slide4 {
-            //    animation: 20s slides-set-4 infinite;
-            //}
         }
 
         @media (min-width: 600px) {
@@ -967,11 +954,9 @@ input {
     0% {
         transform: scale(1) skewY(10deg);
     }
-
     50% {
         transform: scale(1.05) skewY(10deg);
     }
-
     100% {
         transform: scale(1) skewY(10deg);
     }
@@ -981,13 +966,11 @@ input {
     0% {
         transform: scale(1) skewX(10deg);
     }
-
     50% {
-        transform: scale(1)skewX(10deg);
-    }
-
-    100% {
         transform: scale(1.05) skewX(10deg);
+    }
+    100% {
+        transform: scale(1) skewX(10deg);
     }
 }
 
@@ -995,13 +978,11 @@ input {
     0% {
         transform: scale(1.05);
     }
-
     50% {
-        transform: scale(1.05);
-    }
-
-    100% {
         transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
     }
 }
 
@@ -1032,7 +1013,6 @@ input {
         transform: scale(1);
     }
 }
-
 @keyframes slides-set-2 {
     0% {
         opacity: 0;
@@ -1065,7 +1045,6 @@ input {
         transform: scale(1.05);
     }
 }
-
 @keyframes slides-set-3 {
     0% {
         opacity: 0;
@@ -1093,35 +1072,6 @@ input {
         transform: scale(1.05);
     }
 }
-
-//@keyframes slides-set-4 {
-//    0% {
-//        opacity: 0;
-//        // transform: translateY(-100px);
-//        transform: scale(1.05);
-//    }
-//    64% {
-//        opacity: 0;
-//        // transform: translateY(-100px);
-//        transform: scale(1.05);
-//    }
-//    67% {
-//        opacity: 1;
-//        // transform: translateY(0);
-//        transform: scale(1);
-//    }
-//    97% {
-//        opacity: 1;
-//        // transform: translateY(0);
-//        transform: scale(1);
-//    }
-//    100% {
-//        opacity: 0;
-//        // transform: translateY(100px);
-//        transform: scale(1.05);
-//    }
-//}
-
 
 /* LOGO ANIMATION INSPIRED BY https://bit.ly/2Ti6gVB */
 @keyframes show {
