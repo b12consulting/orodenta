@@ -256,6 +256,12 @@ input {
   flex-direction: row;
 }
 
+.line-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /* GENERAL STYLE */
 .home-view {
   display: flex;
@@ -285,11 +291,20 @@ input {
 .team {
   color: #666a73;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+.team .pic-thomas {
+  width: 250px;
+  border-radius: 50%;
+  border: solid 2px white;
+  margin-right: 30px;
+}
+.team .des-thomas {
+  width: 500px;
 }
 .team .pic-julie {
   width: 250px;
@@ -298,9 +313,9 @@ input {
 }
 .team .description {
   display: flex;
+  width: 500px;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
 }
 .team .description .ic-title {
   display: flex;
@@ -321,8 +336,7 @@ input {
 .team .description .content-mela {
   margin-right: 20px;
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
 }
 .team .description .content-mela .left-col {
   margin-right: 20px;

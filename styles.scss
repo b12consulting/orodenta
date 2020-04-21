@@ -310,6 +310,12 @@ input {
     flex-direction: row;
 }
 
+.line-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* GENERAL STYLE */
 
 .home-view {
@@ -344,11 +350,22 @@ input {
 .team {
     color: $secondary;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
+
+    .pic-thomas {
+        width: 250px;
+        border-radius: 50%;
+        border: solid 2px white;
+        margin-right: 30px;
+    }
+
+    .des-thomas {
+        width: 500px;
+    }
 
     .pic-julie {
         width: 250px;
@@ -358,9 +375,9 @@ input {
 
     .description {
         display: flex;
+        width: 500px;
         justify-content: center;
         flex-direction: column;
-        width: 100%;
 
         .ic-title {
             display: flex;
@@ -385,8 +402,7 @@ input {
         .content-mela {
             margin-right: 20px;
             display: flex;
-            flex-direction: row;
-            width: 100%;
+            flex-direction: column;
 
             .left-col {
                 margin-right: 20px;
