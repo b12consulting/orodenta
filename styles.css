@@ -654,7 +654,6 @@ input {
 .slideshow {
   position: absolute;
   top: 0;
-  margin-top: 60px;
   left: 50%;
   width: 100%;
   height: 100%;
@@ -675,7 +674,7 @@ input {
   left: 0;
   top: -10%;
   width: 100vw;
-  height: 300px;
+  height: 100vh;
   animation: 11s slideshow-hero-mobile -3s infinite;
 }
 .slideshow--hero .slide1 {
@@ -688,7 +687,7 @@ input {
 }
 .slideshow--hero .slide3 {
   background-image: url(assets/images/img-03.jpg);
-  animation: 10s slides-set-3 -0.1s infinite;
+  animation: 20s slides-set-3 -0.1s infinite;
 }
 @media (min-width: 600px) {
   .slideshow--hero {
@@ -728,18 +727,18 @@ input {
   right: 0;
 }
 .slideshow--contrast .slides {
-  animation: 20s slideshow-contrast -5s infinite;
+  animation: 14s slideshow-contrast -5s infinite;
 }
 .slideshow--contrast .slide1 {
-  background-image: linear-gradient(to bottom, rgba(104, 107, 116, 0.25) 0, rgba(169, 205, 112, 0.5) 100%), url(assets/images/img-01.jpg);
+  background-image: linear-gradient(to bottom, rgba(102, 106, 115, 0.25) 0, rgba(169, 211, 109, 0.7) 100%), url(assets/images/img-01.jpg);
   animation: 20s slides-set-1 -0.2s infinite;
 }
 .slideshow--contrast .slide2 {
-  background-image: linear-gradient(to bottom, rgba(104, 107, 116, 0.25) 0, rgba(169, 205, 112, 0.5) 100%), url(assets/images/img-02.jpg);
+  background-image: linear-gradient(to bottom, rgba(102, 106, 115, 0.25) 0, rgba(169, 211, 109, 0.7) 100%), url(assets/images/img-02.jpg);
   animation: 20s slides-set-2 -0.2s infinite;
 }
 .slideshow--contrast .slide3 {
-  background-image: linear-gradient(to bottom, rgba(104, 107, 116, 0.25) 0, rgba(169, 205, 112, 0.5) 100%), url(assets/images/img-03.jpg);
+  background-image: linear-gradient(to bottom, rgba(102, 106, 115, 0.25) 0, rgba(169, 211, 109, 0.7) 100%), url(assets/images/img-03.jpg);
   animation: 20s slides-set-3 -0.2s infinite;
 }
 .slideshow--contrast--after {
@@ -803,10 +802,10 @@ input {
     transform: scale(1) skewX(10deg);
   }
   50% {
-    transform: scale(1) skewX(10deg);
+    transform: scale(1.05) skewX(10deg);
   }
   100% {
-    transform: scale(1.05) skewX(10deg);
+    transform: scale(1) skewX(10deg);
   }
 }
 @keyframes slideshow-contrast {
@@ -814,10 +813,10 @@ input {
     transform: scale(1.05);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.05);
   }
 }
 @keyframes slides-set-1 {
