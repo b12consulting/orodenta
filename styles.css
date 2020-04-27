@@ -331,17 +331,10 @@ input {
 .team .description .ic-title .ic img {
   width: 150px;
 }
-.team .description .content-mela {
-  margin-right: 20px;
+.team .content-mela {
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
-}
-.team .description .content-mela .left-col {
-  margin-right: 20px;
-  width: 50%;
-}
-.team .description .content-mela .right-col {
-  width: 50%;
 }
 .team .align-col {
   display: flex;

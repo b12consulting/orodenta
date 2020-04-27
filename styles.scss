@@ -399,21 +399,13 @@ input {
         .content-julie {
         }
 
-        .content-mela {
-            margin-right: 20px;
-            display: flex;
-            flex-direction: column;
 
-            .left-col {
-                margin-right: 20px;
-                width: 50%;
-            }
+    }
 
-            .right-col {
-                width: 50%;
-            }
-        }
-
+    .content-mela {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
     }
 
     .align-col {
