@@ -1007,6 +1007,10 @@ input {
   .contact .right-box a {
     color: #a9d36d !important;
   }
+
+  .map {
+    margin-top: 20px !important;
+  }
 }
 @media screen and (max-width: 750px) {
   .row {
