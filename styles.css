@@ -621,6 +621,10 @@ input {
   padding: 5px;
   border: solid 1px #a9d36d;
 }
+.footer .address-box {
+  display: flex;
+  flex-direction: column;
+}
 
 .contact {
   color: white;
@@ -1007,11 +1011,22 @@ input {
   .contact .right-box a {
     color: #a9d36d !important;
   }
-
-  .map {
-    margin-top: 20px !important;
-  }
 }
+.address-box__info {
+  display: flex;
+  flex-direction: row;
+}
+.address-box__info .acces {
+  margin-right: 30px;
+}
+.address-box__info .time {
+  flex-direction: row;
+  align-items: center;
+}
+.address-box__info .time img {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 750px) {
   .row {
     display: flex;

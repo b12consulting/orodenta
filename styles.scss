@@ -761,6 +761,11 @@ input {
             }
         }
     }
+
+    .address-box {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .contact {
@@ -1191,11 +1196,27 @@ input {
         }
     }
 
-    .map {
-        margin-top: 20px !important;
-    }
 }
 
+.address-box {
+    &__info {
+        display: flex;
+        flex-direction: row;
+
+        .acces {
+            margin-right: 30px;
+        }
+
+        .time {
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 750px) {
     .row {
