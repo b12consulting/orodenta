@@ -806,8 +806,10 @@ input {
         column-gap: 1.5rem;
         width: 90%;
         margin: 0 auto;
-        div {
+
+        .click-picture {
             width: 150px;
+            cursor: pointer;
             margin: 0 1.5rem 1.5rem 0;
             display: inline-block;
             width: 100%;
@@ -833,11 +835,6 @@ input {
             }
         }
     }
-
-
-
-
-
 }
 
 /* SLIDER MOTION INSPIRED BY https://codepen.io/lgrqvst/pen/YdVLrE */
