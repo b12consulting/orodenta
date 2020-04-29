@@ -804,7 +804,7 @@ input {
     .grid-container {
         columns: 5 200px;
         column-gap: 1.5rem;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
 
         .click-picture {
@@ -1237,6 +1237,8 @@ input {
 }
 
 .address-box {
+    margin-bottom: 60px;
+    
     &__info {
         display: flex;
         flex-direction: row;

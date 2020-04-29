@@ -655,7 +655,7 @@ input {
 .gallery .grid-container {
   columns: 5 200px;
   column-gap: 1.5rem;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .gallery .grid-container .click-picture {
@@ -1043,6 +1043,9 @@ input {
   .contact .right-box a {
     color: #a9d36d !important;
   }
+}
+.address-box {
+  margin-bottom: 60px;
 }
 .address-box__info {
   display: flex;
