@@ -652,6 +652,37 @@ input {
   color: #a9d36d !important;
 }
 
+.gallery .grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.gallery .grid-container div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.gallery .grid-container div:hover img {
+  filter: grayscale(0);
+}
+.gallery .grid-container div img {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.gallery .grid-container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  color: white;
+}
+
 /* SLIDER MOTION INSPIRED BY https://codepen.io/lgrqvst/pen/YdVLrE */
 .motion-slider {
   position: relative;
