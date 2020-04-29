@@ -325,8 +325,8 @@ input {
     align-items: center;
     width: 100%;
     z-index: 4;
-    position: absolute;
-    margin-top: -324px;
+    margin-top: -130px;
+    position: relative;
 }
 
 .home-container {
@@ -1275,8 +1275,6 @@ input {
     }
 
     .home-view {
-        height: 400px;
-
         #switch-txt {
             font-size: 25px;
         }
