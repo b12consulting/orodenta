@@ -363,10 +363,6 @@ input {
         margin-right: 30px;
     }
 
-    .des-thomas {
-        width: 500px;
-    }
-
     .pic-julie {
         width: 250px;
         margin-right: 30px;
@@ -1207,6 +1203,12 @@ input {
 }
 
 @media (max-width: 800px) {
+
+    .team {
+        .description {
+            width: 100%;
+        }
+    }
 
     .contact {
         flex-direction: column;
