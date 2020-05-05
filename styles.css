@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* VARIABLES COLORS */
 /* RESET HTML */
 html, body {
@@ -327,6 +328,20 @@ input {
 }
 .team .description .ic-title .ic img {
   width: 150px;
+}
+.team .description ul {
+  list-style: none;
+}
+.team .description ul li::before {
+  content: "•";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #a9d36d;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 .team .content-mela {
   margin-right: 30px;
