@@ -251,6 +251,11 @@ html,body {
             font-family:'omnesmedium';
         }
 
+        .section-title-white {
+            color: white;
+            font-size: 25px;
+            font-family:'omnesmedium';
+        }
 
     }
 }
@@ -344,7 +349,6 @@ input {
 .id-section {
     height: 59px;
     margin-top: -59px;
-
 }
 
 .team {
@@ -664,12 +668,35 @@ input {
 }
 
 .rdv {
-    padding: 20px 0;
+    background-color: $primary-green;
+    padding-bottom: 20px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .row {
+            width: 100%;
+            align-items: center;
+        }
+
+
+        img {
+            width: 150px;
+            margin-right: 20px;
+        }
+    }
 
     .rdv-button {
-        background-color: $primary-green;
-        border: solid 1px $primary-green;
-        color: white;
+        background-color: white;
+        border: solid 1px white;
+        color: $primary-green;
         text-decoration: none;
         padding: 10px 16px;
         margin: 10px 10px;
@@ -680,6 +707,11 @@ input {
             border: solid 1px $secondary;
             color: $secondary;
         }
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
     }
 }
 

@@ -202,6 +202,11 @@ html, body {
   font-size: 25px;
   font-family: "omnesmedium";
 }
+.wrapper .container .section-title-white {
+  color: white;
+  font-size: 25px;
+  font-family: "omnesmedium";
+}
 
 .row {
   display: flex;
@@ -544,12 +549,30 @@ input {
 }
 
 .rdv {
-  padding: 20px 0;
+  background-color: #a9d36d;
+  padding-bottom: 20px;
+}
+.rdv a {
+  text-decoration: none;
+}
+.rdv .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.rdv .container .row {
+  width: 100%;
+  align-items: center;
+}
+.rdv .container img {
+  width: 150px;
+  margin-right: 20px;
 }
 .rdv .rdv-button {
-  background-color: #a9d36d;
-  border: solid 1px #a9d36d;
-  color: white;
+  background-color: white;
+  border: solid 1px white;
+  color: #a9d36d;
   text-decoration: none;
   padding: 10px 16px;
   margin: 10px 10px;
@@ -559,6 +582,10 @@ input {
   background-color: white;
   border: solid 1px #666a73;
   color: #666a73;
+}
+.rdv .col {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
