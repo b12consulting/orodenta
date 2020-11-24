@@ -688,7 +688,7 @@ input {
 
 
         img {
-            width: 150px;
+            width: 120px;
             margin-right: 20px;
         }
     }
@@ -698,9 +698,12 @@ input {
         border: solid 1px white;
         color: $primary-green;
         text-decoration: none;
-        padding: 10px 16px;
+        padding: 10px 5px;
         margin: 10px 10px;
         text-align: center;
+        width: 160px;
+        font-size: 13px;
+        font-family: "omnesmedium";
 
         &:hover {
             background-color: white;
@@ -1304,6 +1307,26 @@ input {
     }
 }
 
+@media screen and (max-width: 920px) {
+    .rdv {
+        .row {
+            display: flex;
+            flex-direction: column;
+
+            .rdv-button {
+                width: 200px;
+            }
+
+            img {
+                width: 214px !important;
+                margin-right: 0 !important;
+                margin-bottom: 6px !important;
+            }
+
+        }
+    }
+}
+
 @media screen and (max-width: 750px) {
     .row {
         display: flex;
@@ -1428,6 +1451,18 @@ input {
 
 @media screen and (max-width: 600px) {
 
+    .rdv {
+        .row {
+            .rdv-button {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .number-wrapper .container .number {
         flex-direction: column;
         justify-content: center;
@@ -1447,6 +1482,21 @@ input {
 
         .padding {
             padding: 0;
+        }
+    }
+
+    .rdv {
+        .row {
+            .rdv-button {
+                width: 200px;
+                font-size: 13px;
+            }
+
+            img {
+                width: 234px !important;
+                margin-right: 0 !important;
+                margin-bottom: 6px !important;
+            }
         }
     }
 }

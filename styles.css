@@ -566,7 +566,7 @@ input {
   align-items: center;
 }
 .rdv .container img {
-  width: 150px;
+  width: 120px;
   margin-right: 20px;
 }
 .rdv .rdv-button {
@@ -574,9 +574,12 @@ input {
   border: solid 1px white;
   color: #a9d36d;
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 10px 5px;
   margin: 10px 10px;
   text-align: center;
+  width: 160px;
+  font-size: 13px;
+  font-family: "omnesmedium";
 }
 .rdv .rdv-button:hover {
   background-color: white;
@@ -1105,6 +1108,20 @@ input {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 920px) {
+  .rdv .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .rdv .row .rdv-button {
+    width: 200px;
+  }
+  .rdv .row img {
+    width: 214px !important;
+    margin-right: 0 !important;
+    margin-bottom: 6px !important;
+  }
+}
 @media screen and (max-width: 750px) {
   .row {
     display: flex;
@@ -1204,6 +1221,13 @@ input {
   }
 }
 @media screen and (max-width: 600px) {
+  .rdv .row .rdv-button {
+    width: 100%;
+  }
+  .rdv .row img {
+    width: 100%;
+  }
+
   .number-wrapper .container .number {
     flex-direction: column;
     justify-content: center;
@@ -1221,6 +1245,16 @@ input {
   }
   .number-wrapper .container .number .padding {
     padding: 0;
+  }
+
+  .rdv .row .rdv-button {
+    width: 200px;
+    font-size: 13px;
+  }
+  .rdv .row img {
+    width: 234px !important;
+    margin-right: 0 !important;
+    margin-bottom: 6px !important;
   }
 }
 @media screen and (max-width: 400px) {
